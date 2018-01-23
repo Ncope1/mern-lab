@@ -17,7 +17,7 @@ class App extends Component {
         </div>
 
         <main>
-        <Routines />
+          <Routines />
 {/* utilized react-router lesson for this section */}
         {/* <Switch> 
           <Route 

@@ -8,15 +8,14 @@ class Routines extends Component {
         routines: []
     }
 
-    componentWDidMount() {
+    componentDidMount() {
         axios.get(ROUTINES_URL)
-        .then(response => this.setState({routines: response.data.routines }))
+        .then(response => this.setState({ routines: response.data.routines }))
     }
 
 
     render () {
         let routines = this.state.routines
-        console.log(routines)
         return(
             <div>
                 {
@@ -25,6 +24,7 @@ class Routines extends Component {
                     })
                 }
             </div>
+            // STILL MISSING "C" IN CR(UD) FOR THIS ASSIGNMENT
         )
     }
 }

@@ -23,17 +23,17 @@ $ git checkout -b <your-branch-here>
 - [✅] React repo is organized and files are semantically named
 - [✅] React app makes API calls to the back-end application in `componentDidMount()`
 - [✅] CSS styling is present
-- [ ] React app has create and read functionality on at least one model
+- [1/2 ✅] React app has create and read functionality on at least one model
 
 ### Express app requirements
 
-- [X] Express app responds with JSON
-- [X] CORS policy allows R  eact app to make requests
+- [✅] Express app responds with JSON
+- [✅] CORS policy allows React app to make requests
 
 ### Bonus
 
-- Use react router for views
-- Deploy your front-end to github pages and update your back-end Heroku app.
+- [ ] Use react router for views
+- [ ] Deploy your front-end to github pages and update your back-end Heroku app.
 > Check out the [Create-React-App docs](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md) for help deploying to github pages.
 
 ## Getting Started
