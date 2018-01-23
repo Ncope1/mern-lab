@@ -1,24 +1,30 @@
 import React, { Component } from 'react';
 // import './App.css';
 import Header from './Components/Header'
-import Routine from './Components/Routine'
+import Routines from './Components/Routines'
+import {
+  Route,
+  Link, 
+  Switch
+} from 'react-router-dom'
 
 class App extends Component {
   render() {
     return (
       <div>
-        <nav>
+        <div>
           <Header />
-        </nav>
+        </div>
+
         <main>
-        <Switch> //utilized react-router lesson for this section
-        <Link to ='/proper-makeup-removal'>Proper Makeup Removal</Link>
+{/* utilized react-router lesson for this section */}
+        <Switch> 
         <Route 
-          path='/proper-makeup-removal'
+          path='/routines'
           render={(props) => (
-            <Routine />
+            <Routines />
           )}
-        // <p>Proper Makeup Removal</p>
+        //<p>Proper Makeup Removal</p>
         />
         
         {/* <Routines /> */}

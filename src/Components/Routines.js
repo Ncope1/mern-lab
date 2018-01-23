@@ -1,14 +1,15 @@
 //utilized flashcard container exercise as a guide
-
-import react from 'react'
+import React, {Component} from 'react'
 import RoutineDetails from './RoutineDetails'
 import axios from 'axios'
-import { ROUTINES_URL} from '../constants'
+import { ROUTINES_URL } from '../constants'
 
 class Routines extends Component {
     state = {
         routines: []
     }
+
+    
 
     render () {
         return(
