@@ -1,15 +1,19 @@
 import React from 'react'
-
+import {
+    Route,
+    Link, 
+    Switch
+  } from 'react-router-dom'
 
 const Header = () => (
 <div className="card-panel purple accent-1">
 <nav className="purple accent-1">
     <ul className="left hide-on-med-and-down">
         <li>
-            <a className="navbar-brand" href="/">Home</a>
+            <Link to = '/home' className="navbar-brand">Home</Link>
         </li>
         <li>
-            <a href="/routines">Routines</a>
+            <Link to = "/routines">Routines</Link>
         </li>
 
     </ul>

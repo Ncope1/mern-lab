@@ -17,19 +17,20 @@ class App extends Component {
         </div>
 
         <main>
+        <Routines />
 {/* utilized react-router lesson for this section */}
-        <Switch> 
-        <Route 
-          path='/routines'
-          render={(props) => (
-            <Routines />
-          )}
+        {/* <Switch> 
+          <Route 
+            path='/routines'
+            render={(props) => (
+              <Routines />
+            )}
         //<p>Proper Makeup Removal</p>
-        />
+        /> */}
         
         {/* <Routines /> */}
         {/* <RoutineDetails /> */}
-        </Switch>
+        {/* </Switch> */}
         </main>
       </div>
     );

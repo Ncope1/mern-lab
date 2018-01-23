@@ -1,6 +1,5 @@
-//utilized flashcard container exercise as a guide
+//UTILIZED FLASHCARD EXERRCISE AS A GUIDE FOR THIS SECTION
 import React, {Component} from 'react'
-import RoutineDetails from './RoutineDetails'
 import axios from 'axios'
 import { ROUTINES_URL } from '../constants'
 
@@ -9,12 +8,22 @@ class Routines extends Component {
         routines: []
     }
 
-    
+    componentWDidMount() {
+        axios.get(ROUTINES_URL)
+        .then(response => this.setState({routines: response.data.routines }))
+    }
+
 
     render () {
+        let routines = this.state.routines
+        console.log(routines)
         return(
             <div>
-                <p>This Routine Is Tha BOMB!!!!</p>
+                {
+                    routines.map((currentRoutine, currentIndex) => {
+                        return <li key={currentIndex}>{currentRoutine.title}</li>
+                    })
+                }
             </div>
         )
     }
