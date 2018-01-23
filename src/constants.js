@@ -1,0 +1,1 @@
+export const ROUTINES_URL = 'https://mern-lab.herokuapp.com/routines'
